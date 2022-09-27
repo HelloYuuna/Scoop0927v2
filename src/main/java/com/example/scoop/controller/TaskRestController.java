@@ -40,6 +40,7 @@ public class TaskRestController {
 
     @PostMapping("insertTask")
     public int insertTask(Task task) {
+        // TODO: 계속 넘어오지 않음! 체크 필수!
         log.debug("모달창에서 입력받은 내용: {}", task);
 
 
