@@ -2,7 +2,6 @@ package com.example.scoop.config.auth;
 
 import javax.sql.DataSource;
 
-import com.example.scoop.domain.Role;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -29,6 +28,7 @@ public class WebSecurityConfig {
                 .antMatchers("/member/signupForm",
                         "/member/idcheck",
                         "/member/signup",
+                        "/task/insertCharger",      // 내작업 페이지에서 로그인 유저 정보 가져오기
                         "/img/**",
                         "/css/**",
                         "/js/**").permitAll()		//설정한 리소스의 접근을 인증절차 없이 허용
